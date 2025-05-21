@@ -3,6 +3,8 @@
 ## Project Overview
 This project automates key aspects of the sales process using Python programming and AI/ML techniques. The goal is to streamline lead generation, email outreach, and campaign analytics with minimal manual intervention.
 
+This project automates the sales outreach process for a T-shirt manufacturing business targeting IT companies in Ahmedabad. The system is designed to scrape leads, generate personalized emails, send them via SMTP, track engagement, and categorize leads using analytics—all with one command.
+
 You will be able to:
 - Scrape business leads from Google Maps based on your target Ideal Customer Profile (ICP).
 - Extract relevant contact data including emails by visiting each company website.
