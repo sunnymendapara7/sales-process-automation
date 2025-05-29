@@ -2,9 +2,9 @@ import pandas as pd
 
 # Error handling for missing Excel file
 try:
-    df = pd.read_excel("scraped_it_companies_ahmedabad_with_emails.xlsx")
+    df = pd.read_excel("company_data.xlsx")
 except FileNotFoundError:
-    print("Error: 'scraped_it_companies_ahmedabad_with_emails.xlsx' not found. Please ensure the file exists in the current directory or provide the correct path.")
+    print("Error: 'company_data.xlsx' not found. Please ensure the file exists in the current directory or provide the correct path.")
     exit(1)
 
 # Read the email template

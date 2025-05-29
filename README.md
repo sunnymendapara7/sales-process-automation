@@ -6,7 +6,7 @@ This project automates key aspects of the sales process using Python programming
 This project automates the sales outreach process for a T-shirt manufacturing business targeting IT companies in Ahmedabad. The system is designed to scrape leads, generate personalized emails, send them via SMTP, track engagement, and categorize leads using analytics—all with one command.
 
 You will be able to:
-- Scrape business leads from Google Maps based on your target Ideal Customer Profile (ICP).
+- Scrape business leads from Linkedin based on target Ideal Customer Profile (ICP).
 - Extract relevant contact data including emails by visiting each company website.
 - Generate personalized email templates for outreach.
 - Automate the sending of emails in batches to avoid spam filters.
@@ -18,9 +18,9 @@ You will be able to:
 ## Step-by-Step Process Explanation
 
 ### Step 1: Lead Scraping & Email Extraction
-- Using `map_lead.py`, the project scrapes company details such as name, website, address, and phone from Google Maps focused on IT companies in Ahmedabad.
-- Since email addresses are not directly available, the script visits each company’s website and extracts email addresses by scanning the web page content.
-- The final structured data is saved into an Excel file `scraped_it_companies_ahmedabad_with_emails.xlsx` for further use.
+- The `linkedin_scraper.py` script scrapes LinkedIn profiles of professionals from IT companies, extracting details such as name, job title, location, and associated company information (e.g., company name, website, phone, and industry).
+- Since email addresses are not directly available on LinkedIn, the script visits each company’s website (if available) and extracts email addresses by scanning the web page content.
+- All extracted data is structured and saved into an Excel file named `company_data.xlsx` for use in subsequent steps.
 
 ### Step 2: Email Generation
 - The `generate_emails.py` script reads the Excel file and creates personalized emails using a predefined HTML email template.
